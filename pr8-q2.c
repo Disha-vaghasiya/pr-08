@@ -6,7 +6,7 @@ void  main()
     char string[100];
 	int i,c=0;
 	
-	printf("Enter any string: ");
+	printf("Enter any ");
     gets(string);
     
     char *p;
