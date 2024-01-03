@@ -4,18 +4,18 @@ void  main()
 {
   	
     char string[100];
-	int i,c=0;
+	int *p;
+	int *ptr;
+	int length;
 	
-	printf("Enter any ");
+	printf("Enter any string:- ");
     gets(string);
     
-    char *p;
-    p=&string;
+ ptr=&string;
+ length=strlen(ptr);
+ p=&length;
 
    
-   for(i=0;string[i]!='\0';i++){
-        c++;
-        p++;
-    }
-    printf("The length of the string is: %d", c);
+
+    printf("The length of the string is: %d", *p);
 }
